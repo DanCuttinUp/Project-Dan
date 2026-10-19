@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>DanCuttinUp</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="contact.html">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <h2>Book Your Appointment</h2>
+        <form id="bookingForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="service">Service:</label>
+            <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option value="haircut-and-beard">Haircut and Beard</option>
+                <option value="haircut">Haircut</option>
+                <option value="beard-trim">Beard Trim</option>
+                <option value="kids-haircut">Kids Haircut</option>
+                <option value="retwist">Retwist</option>
+            </select>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Submit Booking</button>
+        </form>
+    </div>
+
+    <script src="booking.js"></script>
+</body>
+</html>
